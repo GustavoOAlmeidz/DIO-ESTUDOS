@@ -172,24 +172,6 @@ No `package.json`:
 
 ---
 
-## Solucao de Problemas
-
-### Saida `[AsyncFunction: handle]`
-
-Isso ocorre quando a referencia da funcao eh exibida, em vez de executar a funcao.
-
-Exemplo incorreto:
-
-```js
-const password = await handle;
-```
-
-Correto:
-
-```js
-const password = await handle();
-```
-
 ### Erro com variaveis de ambiente
 
 - confira se o arquivo `.env` existe na raiz
